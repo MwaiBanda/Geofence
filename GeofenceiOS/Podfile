@@ -1,0 +1,5 @@
+target 'GeofenceiOS' do
+  use_frameworks!
+  platform :ios, '14.1'
+  pod 'GeofenceSDK', :path => '../GeofenceSDK'
+end
