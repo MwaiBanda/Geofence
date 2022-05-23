@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "33849001001",
+    "project_id": "geofence-multiplatform",
+    "storage_bucket": "geofence-multiplatform.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:33849001001:android:3b82df99ddf0f957e4c838",
+        "android_client_info": {
+          "package_name": "com.mwaibanda.geofence_multiplatform.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "33849001001-2td1la7qm7a9b625aev36t4jj9r76nvi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs8LF4LFsxWFVv4LyMa1LKwsJA2UCQCPg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "33849001001-2td1la7qm7a9b625aev36t4jj9r76nvi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

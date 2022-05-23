@@ -3,165 +3,316 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		058557BB273AAA24004C7B11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557BA273AAA24004C7B11 /* Assets.xcassets */; };
-		058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */; };
-		2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* iOSApp.swift */; };
-		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
-		951A14B7CD3398D302752F52 /* Pods_GeofenceiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B97B808CA22D433C848989 /* Pods_GeofenceiOS.framework */; };
+		3B416FF6C43583B4C0DA91EE /* Pods_GeofenceiOS_GeofenceiOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3839F05CB8D2FAC54CE1B01 /* Pods_GeofenceiOS_GeofenceiOSUITests.framework */; };
+		8187CCCC283C32CC00DCFF28 /* GeofenceiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8187CCCB283C32CC00DCFF28 /* GeofenceiOSApp.swift */; };
+		8187CCCE283C32CC00DCFF28 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8187CCCD283C32CC00DCFF28 /* ContentView.swift */; };
+		8187CCD0283C32CE00DCFF28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8187CCCF283C32CE00DCFF28 /* Assets.xcassets */; };
+		8187CCD3283C32CE00DCFF28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8187CCD2283C32CE00DCFF28 /* Preview Assets.xcassets */; };
+		8187CCDD283C32CE00DCFF28 /* GeofenceiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8187CCDC283C32CE00DCFF28 /* GeofenceiOSTests.swift */; };
+		8187CCE7283C32CE00DCFF28 /* GeofenceiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8187CCE6283C32CE00DCFF28 /* GeofenceiOSUITests.swift */; };
+		8187CCE9283C32CE00DCFF28 /* GeofenceiOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8187CCE8283C32CE00DCFF28 /* GeofenceiOSUITestsLaunchTests.swift */; };
+		8187CCF7283C344100DCFF28 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8187CCF6283C344000DCFF28 /* GoogleService-Info.plist */; };
+		81B3E2ED283C4C02002ADB35 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 81B3E2EC283C4C02002ADB35 /* FirebaseAnalytics */; };
+		81B3E2EF283C4C02002ADB35 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 81B3E2EE283C4C02002ADB35 /* FirebaseCrashlytics */; };
+		CD91264130B2BB30C51FF9A3 /* Pods_GeofenceiOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1220018268D6B8BAD7529838 /* Pods_GeofenceiOSTests.framework */; };
+		E6E24A2A65754033D23E4E91 /* Pods_GeofenceiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BE4EB8D5E88CF8A0CDC51A3 /* Pods_GeofenceiOS.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8187CCD9283C32CE00DCFF28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8187CCC0283C32CC00DCFF28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8187CCC7283C32CC00DCFF28;
+			remoteInfo = GeofenceiOS;
+		};
+		8187CCE3283C32CE00DCFF28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8187CCC0283C32CC00DCFF28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8187CCC7283C32CC00DCFF28;
+			remoteInfo = GeofenceiOS;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		058557BA273AAA24004C7B11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		11B97B808CA22D433C848989 /* Pods_GeofenceiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeofenceiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2152FB032600AC8F00CF470E /* iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSApp.swift; sourceTree = "<group>"; };
-		6A9E8A4FBC366D7AA5A4350F /* Pods-GeofenceiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeofenceiOS.release.xcconfig"; path = "Target Support Files/Pods-GeofenceiOS/Pods-GeofenceiOS.release.xcconfig"; sourceTree = "<group>"; };
-		755515F78D72AA9B5E2B991E /* Pods-GeofenceiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeofenceiOS.debug.xcconfig"; path = "Target Support Files/Pods-GeofenceiOS/Pods-GeofenceiOS.debug.xcconfig"; sourceTree = "<group>"; };
-		7555FF7B242A565900829871 /* GeofenceiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeofenceiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7555FF82242A565900829871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1220018268D6B8BAD7529838 /* Pods_GeofenceiOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeofenceiOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B570144B92A7F18AAFD7CC4 /* Pods-GeofenceiOS-GeofenceiOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeofenceiOS-GeofenceiOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-GeofenceiOS-GeofenceiOSUITests/Pods-GeofenceiOS-GeofenceiOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		49C99A2853868CD1E855A13D /* Pods-GeofenceiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeofenceiOSTests.release.xcconfig"; path = "Target Support Files/Pods-GeofenceiOSTests/Pods-GeofenceiOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		5BB864E495F765FBEA2CC553 /* Pods-GeofenceiOS-GeofenceiOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeofenceiOS-GeofenceiOSUITests.release.xcconfig"; path = "Target Support Files/Pods-GeofenceiOS-GeofenceiOSUITests/Pods-GeofenceiOS-GeofenceiOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7B6B94AB2837B5D0442F1852 /* Pods-GeofenceiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeofenceiOS.debug.xcconfig"; path = "Target Support Files/Pods-GeofenceiOS/Pods-GeofenceiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		8187CCC8283C32CC00DCFF28 /* GeofenceiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeofenceiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8187CCCB283C32CC00DCFF28 /* GeofenceiOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeofenceiOSApp.swift; sourceTree = "<group>"; };
+		8187CCCD283C32CC00DCFF28 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8187CCCF283C32CE00DCFF28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8187CCD2283C32CE00DCFF28 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8187CCD8283C32CE00DCFF28 /* GeofenceiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeofenceiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8187CCDC283C32CE00DCFF28 /* GeofenceiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeofenceiOSTests.swift; sourceTree = "<group>"; };
+		8187CCE2283C32CE00DCFF28 /* GeofenceiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeofenceiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8187CCE6283C32CE00DCFF28 /* GeofenceiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeofenceiOSUITests.swift; sourceTree = "<group>"; };
+		8187CCE8283C32CE00DCFF28 /* GeofenceiOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeofenceiOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8187CCF6283C344000DCFF28 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9BE4EB8D5E88CF8A0CDC51A3 /* Pods_GeofenceiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeofenceiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CC5F5145B6757C58095E39B /* Pods-GeofenceiOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeofenceiOSTests.debug.xcconfig"; path = "Target Support Files/Pods-GeofenceiOSTests/Pods-GeofenceiOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C3583220AF11DC1A3DD16E8B /* Pods-GeofenceiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeofenceiOS.release.xcconfig"; path = "Target Support Files/Pods-GeofenceiOS/Pods-GeofenceiOS.release.xcconfig"; sourceTree = "<group>"; };
+		C3839F05CB8D2FAC54CE1B01 /* Pods_GeofenceiOS_GeofenceiOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeofenceiOS_GeofenceiOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1DC973D760210F5938AFEBCD /* Frameworks */ = {
+		8187CCC5283C32CC00DCFF28 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				951A14B7CD3398D302752F52 /* Pods_GeofenceiOS.framework in Frameworks */,
+				81B3E2EF283C4C02002ADB35 /* FirebaseCrashlytics in Frameworks */,
+				81B3E2ED283C4C02002ADB35 /* FirebaseAnalytics in Frameworks */,
+				E6E24A2A65754033D23E4E91 /* Pods_GeofenceiOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8187CCD5283C32CE00DCFF28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD91264130B2BB30C51FF9A3 /* Pods_GeofenceiOSTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8187CCDF283C32CE00DCFF28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B416FF6C43583B4C0DA91EE /* Pods_GeofenceiOS_GeofenceiOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		058557D7273AAEEB004C7B11 /* Preview Content */ = {
+		54DB0D46114FCE3742F78BA4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */,
+				9BE4EB8D5E88CF8A0CDC51A3 /* Pods_GeofenceiOS.framework */,
+				C3839F05CB8D2FAC54CE1B01 /* Pods_GeofenceiOS_GeofenceiOSUITests.framework */,
+				1220018268D6B8BAD7529838 /* Pods_GeofenceiOSTests.framework */,
 			);
-			path = "Preview Content";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		13FB27376A70E09444E64BAE /* Pods */ = {
+		7375D2159BE7D1EB0B1148CF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				755515F78D72AA9B5E2B991E /* Pods-GeofenceiOS.debug.xcconfig */,
-				6A9E8A4FBC366D7AA5A4350F /* Pods-GeofenceiOS.release.xcconfig */,
+				7B6B94AB2837B5D0442F1852 /* Pods-GeofenceiOS.debug.xcconfig */,
+				C3583220AF11DC1A3DD16E8B /* Pods-GeofenceiOS.release.xcconfig */,
+				2B570144B92A7F18AAFD7CC4 /* Pods-GeofenceiOS-GeofenceiOSUITests.debug.xcconfig */,
+				5BB864E495F765FBEA2CC553 /* Pods-GeofenceiOS-GeofenceiOSUITests.release.xcconfig */,
+				9CC5F5145B6757C58095E39B /* Pods-GeofenceiOSTests.debug.xcconfig */,
+				49C99A2853868CD1E855A13D /* Pods-GeofenceiOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		7555FF72242A565900829871 = {
+		8187CCBF283C32CC00DCFF28 = {
 			isa = PBXGroup;
 			children = (
-				7555FF7D242A565900829871 /* GeofenceiOS */,
-				7555FF7C242A565900829871 /* Products */,
-				13FB27376A70E09444E64BAE /* Pods */,
-				B49C000D3E019DB2AD989FA4 /* Frameworks */,
+				8187CCCA283C32CC00DCFF28 /* GeofenceiOS */,
+				8187CCDB283C32CE00DCFF28 /* GeofenceiOSTests */,
+				8187CCE5283C32CE00DCFF28 /* GeofenceiOSUITests */,
+				8187CCC9283C32CC00DCFF28 /* Products */,
+				7375D2159BE7D1EB0B1148CF /* Pods */,
+				54DB0D46114FCE3742F78BA4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		7555FF7C242A565900829871 /* Products */ = {
+		8187CCC9283C32CC00DCFF28 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7555FF7B242A565900829871 /* GeofenceiOS.app */,
+				8187CCC8283C32CC00DCFF28 /* GeofenceiOS.app */,
+				8187CCD8283C32CE00DCFF28 /* GeofenceiOSTests.xctest */,
+				8187CCE2283C32CE00DCFF28 /* GeofenceiOSUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7555FF7D242A565900829871 /* GeofenceiOS */ = {
+		8187CCCA283C32CC00DCFF28 /* GeofenceiOS */ = {
 			isa = PBXGroup;
 			children = (
-				058557BA273AAA24004C7B11 /* Assets.xcassets */,
-				7555FF82242A565900829871 /* ContentView.swift */,
-				7555FF8C242A565B00829871 /* Info.plist */,
-				2152FB032600AC8F00CF470E /* iOSApp.swift */,
-				058557D7273AAEEB004C7B11 /* Preview Content */,
+				8187CCF6283C344000DCFF28 /* GoogleService-Info.plist */,
+				8187CCCB283C32CC00DCFF28 /* GeofenceiOSApp.swift */,
+				8187CCCD283C32CC00DCFF28 /* ContentView.swift */,
+				8187CCCF283C32CE00DCFF28 /* Assets.xcassets */,
+				8187CCD1283C32CE00DCFF28 /* Preview Content */,
 			);
 			path = GeofenceiOS;
 			sourceTree = "<group>";
 		};
-		B49C000D3E019DB2AD989FA4 /* Frameworks */ = {
+		8187CCD1283C32CE00DCFF28 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				11B97B808CA22D433C848989 /* Pods_GeofenceiOS.framework */,
+				8187CCD2283C32CE00DCFF28 /* Preview Assets.xcassets */,
 			);
-			name = Frameworks;
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8187CCDB283C32CE00DCFF28 /* GeofenceiOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				8187CCDC283C32CE00DCFF28 /* GeofenceiOSTests.swift */,
+			);
+			path = GeofenceiOSTests;
+			sourceTree = "<group>";
+		};
+		8187CCE5283C32CE00DCFF28 /* GeofenceiOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8187CCE6283C32CE00DCFF28 /* GeofenceiOSUITests.swift */,
+				8187CCE8283C32CE00DCFF28 /* GeofenceiOSUITestsLaunchTests.swift */,
+			);
+			path = GeofenceiOSUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7555FF7A242A565900829871 /* GeofenceiOS */ = {
+		8187CCC7283C32CC00DCFF28 /* GeofenceiOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7555FFA5242A565B00829871 /* Build configuration list for PBXNativeTarget "GeofenceiOS" */;
+			buildConfigurationList = 8187CCEC283C32CE00DCFF28 /* Build configuration list for PBXNativeTarget "GeofenceiOS" */;
 			buildPhases = (
-				FCCC28AE6318E7537008D9AF /* [CP] Check Pods Manifest.lock */,
-				7555FF77242A565900829871 /* Sources */,
-				7555FF79242A565900829871 /* Resources */,
-				1DC973D760210F5938AFEBCD /* Frameworks */,
+				19C7F8DFE0645DEC0CBF3303 /* [CP] Check Pods Manifest.lock */,
+				8187CCC4283C32CC00DCFF28 /* Sources */,
+				8187CCC5283C32CC00DCFF28 /* Frameworks */,
+				8187CCC6283C32CC00DCFF28 /* Resources */,
+				81B3E2F0283C4E23002ADB35 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = GeofenceiOS;
+			packageProductDependencies = (
+				81B3E2EC283C4C02002ADB35 /* FirebaseAnalytics */,
+				81B3E2EE283C4C02002ADB35 /* FirebaseCrashlytics */,
+			);
 			productName = GeofenceiOS;
-			productReference = 7555FF7B242A565900829871 /* GeofenceiOS.app */;
+			productReference = 8187CCC8283C32CC00DCFF28 /* GeofenceiOS.app */;
 			productType = "com.apple.product-type.application";
+		};
+		8187CCD7283C32CE00DCFF28 /* GeofenceiOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8187CCEF283C32CE00DCFF28 /* Build configuration list for PBXNativeTarget "GeofenceiOSTests" */;
+			buildPhases = (
+				41C4D6FBDDE3164B17F672EF /* [CP] Check Pods Manifest.lock */,
+				8187CCD4283C32CE00DCFF28 /* Sources */,
+				8187CCD5283C32CE00DCFF28 /* Frameworks */,
+				8187CCD6283C32CE00DCFF28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8187CCDA283C32CE00DCFF28 /* PBXTargetDependency */,
+			);
+			name = GeofenceiOSTests;
+			productName = GeofenceiOSTests;
+			productReference = 8187CCD8283C32CE00DCFF28 /* GeofenceiOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8187CCE1283C32CE00DCFF28 /* GeofenceiOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8187CCF2283C32CE00DCFF28 /* Build configuration list for PBXNativeTarget "GeofenceiOSUITests" */;
+			buildPhases = (
+				50114AD79B8E70D863A7C034 /* [CP] Check Pods Manifest.lock */,
+				8187CCDE283C32CE00DCFF28 /* Sources */,
+				8187CCDF283C32CE00DCFF28 /* Frameworks */,
+				8187CCE0283C32CE00DCFF28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8187CCE4283C32CE00DCFF28 /* PBXTargetDependency */,
+			);
+			name = GeofenceiOSUITests;
+			productName = GeofenceiOSUITests;
+			productReference = 8187CCE2283C32CE00DCFF28 /* GeofenceiOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7555FF73242A565900829871 /* Project object */ = {
+		8187CCC0283C32CC00DCFF28 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
-				ORGANIZATIONNAME = orgName;
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					7555FF7A242A565900829871 = {
-						CreatedOnToolsVersion = 11.3.1;
+					8187CCC7283C32CC00DCFF28 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					8187CCD7283C32CE00DCFF28 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 8187CCC7283C32CC00DCFF28;
+					};
+					8187CCE1283C32CE00DCFF28 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 8187CCC7283C32CC00DCFF28;
 					};
 				};
 			};
-			buildConfigurationList = 7555FF76242A565900829871 /* Build configuration list for PBXProject "GeofenceiOS" */;
-			compatibilityVersion = "Xcode 9.3";
+			buildConfigurationList = 8187CCC3283C32CC00DCFF28 /* Build configuration list for PBXProject "GeofenceiOS" */;
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 7555FF72242A565900829871;
-			productRefGroup = 7555FF7C242A565900829871 /* Products */;
+			mainGroup = 8187CCBF283C32CC00DCFF28;
+			packageReferences = (
+				81B3E2EB283C4C02002ADB35 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 8187CCC9283C32CC00DCFF28 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7555FF7A242A565900829871 /* GeofenceiOS */,
+				8187CCC7283C32CC00DCFF28 /* GeofenceiOS */,
+				8187CCD7283C32CE00DCFF28 /* GeofenceiOSTests */,
+				8187CCE1283C32CE00DCFF28 /* GeofenceiOSUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7555FF79242A565900829871 /* Resources */ = {
+		8187CCC6283C32CC00DCFF28 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */,
-				058557BB273AAA24004C7B11 /* Assets.xcassets in Resources */,
+				8187CCD3283C32CE00DCFF28 /* Preview Assets.xcassets in Resources */,
+				8187CCF7283C344100DCFF28 /* GoogleService-Info.plist in Resources */,
+				8187CCD0283C32CE00DCFF28 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8187CCD6283C32CE00DCFF28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8187CCE0283C32CE00DCFF28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		FCCC28AE6318E7537008D9AF /* [CP] Check Pods Manifest.lock */ = {
+		19C7F8DFE0645DEC0CBF3303 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -183,28 +334,121 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		41C4D6FBDDE3164B17F672EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GeofenceiOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50114AD79B8E70D863A7C034 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GeofenceiOS-GeofenceiOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81B3E2F0283C4E23002ADB35 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7555FF77242A565900829871 /* Sources */ = {
+		8187CCC4283C32CC00DCFF28 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
-				7555FF83242A565900829871 /* ContentView.swift in Sources */,
+				8187CCCE283C32CC00DCFF28 /* ContentView.swift in Sources */,
+				8187CCCC283C32CC00DCFF28 /* GeofenceiOSApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8187CCD4283C32CE00DCFF28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8187CCDD283C32CE00DCFF28 /* GeofenceiOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8187CCDE283C32CE00DCFF28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8187CCE9283C32CE00DCFF28 /* GeofenceiOSUITestsLaunchTests.swift in Sources */,
+				8187CCE7283C32CE00DCFF28 /* GeofenceiOSUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		8187CCDA283C32CE00DCFF28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8187CCC7283C32CC00DCFF28 /* GeofenceiOS */;
+			targetProxy = 8187CCD9283C32CE00DCFF28 /* PBXContainerItemProxy */;
+		};
+		8187CCE4283C32CE00DCFF28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8187CCC7283C32CC00DCFF28 /* GeofenceiOS */;
+			targetProxy = 8187CCE3283C32CE00DCFF28 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		7555FFA3242A565B00829871 /* Debug */ = {
+		8187CCEA283C32CE00DCFF28 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -232,7 +476,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -259,13 +503,13 @@
 			};
 			name = Debug;
 		};
-		7555FFA4242A565B00829871 /* Release */ = {
+		8187CCEB283C32CE00DCFF28 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -314,68 +558,210 @@
 			};
 			name = Release;
 		};
-		7555FFA6242A565B00829871 /* Debug */ = {
+		8187CCED283C32CE00DCFF28 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 755515F78D72AA9B5E2B991E /* Pods-GeofenceiOS.debug.xcconfig */;
+			baseConfigurationReference = 7B6B94AB2837B5D0442F1852 /* Pods-GeofenceiOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GeofenceiOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 2HB3YHCHVH;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = GeofenceiOS/Info.plist;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = orgIdentifier.GeofenceiOS;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mwaibanda.GeofenceiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		7555FFA7242A565B00829871 /* Release */ = {
+		8187CCEE283C32CE00DCFF28 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6A9E8A4FBC366D7AA5A4350F /* Pods-GeofenceiOS.release.xcconfig */;
+			baseConfigurationReference = C3583220AF11DC1A3DD16E8B /* Pods-GeofenceiOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GeofenceiOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 2HB3YHCHVH;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = GeofenceiOS/Info.plist;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = orgIdentifier.GeofenceiOS;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mwaibanda.GeofenceiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8187CCF0283C32CE00DCFF28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CC5F5145B6757C58095E39B /* Pods-GeofenceiOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2HB3YHCHVH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mwaibanda.GeofenceiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeofenceiOS.app/GeofenceiOS";
+			};
+			name = Debug;
+		};
+		8187CCF1283C32CE00DCFF28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49C99A2853868CD1E855A13D /* Pods-GeofenceiOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2HB3YHCHVH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mwaibanda.GeofenceiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeofenceiOS.app/GeofenceiOS";
+			};
+			name = Release;
+		};
+		8187CCF3283C32CE00DCFF28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B570144B92A7F18AAFD7CC4 /* Pods-GeofenceiOS-GeofenceiOSUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2HB3YHCHVH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mwaibanda.GeofenceiOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GeofenceiOS;
+			};
+			name = Debug;
+		};
+		8187CCF4283C32CE00DCFF28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BB864E495F765FBEA2CC553 /* Pods-GeofenceiOS-GeofenceiOSUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2HB3YHCHVH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mwaibanda.GeofenceiOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GeofenceiOS;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7555FF76242A565900829871 /* Build configuration list for PBXProject "GeofenceiOS" */ = {
+		8187CCC3283C32CC00DCFF28 /* Build configuration list for PBXProject "GeofenceiOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7555FFA3242A565B00829871 /* Debug */,
-				7555FFA4242A565B00829871 /* Release */,
+				8187CCEA283C32CE00DCFF28 /* Debug */,
+				8187CCEB283C32CE00DCFF28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7555FFA5242A565B00829871 /* Build configuration list for PBXNativeTarget "GeofenceiOS" */ = {
+		8187CCEC283C32CE00DCFF28 /* Build configuration list for PBXNativeTarget "GeofenceiOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7555FFA6242A565B00829871 /* Debug */,
-				7555FFA7242A565B00829871 /* Release */,
+				8187CCED283C32CE00DCFF28 /* Debug */,
+				8187CCEE283C32CE00DCFF28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8187CCEF283C32CE00DCFF28 /* Build configuration list for PBXNativeTarget "GeofenceiOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8187CCF0283C32CE00DCFF28 /* Debug */,
+				8187CCF1283C32CE00DCFF28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8187CCF2283C32CE00DCFF28 /* Build configuration list for PBXNativeTarget "GeofenceiOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8187CCF3283C32CE00DCFF28 /* Debug */,
+				8187CCF4283C32CE00DCFF28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		81B3E2EB283C4C02002ADB35 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = exactVersion;
+				version = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		81B3E2EC283C4C02002ADB35 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81B3E2EB283C4C02002ADB35 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		81B3E2EE283C4C02002ADB35 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81B3E2EB283C4C02002ADB35 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 7555FF73242A565900829871 /* Project object */;
+	rootObject = 8187CCC0283C32CC00DCFF28 /* Project object */;
 }

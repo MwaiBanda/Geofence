@@ -1,16 +1,22 @@
+//
+//  ContentView.swift
+//  GeofenceiOS
+//
+//  Created by Mwai Banda on 5/23/22.
+//
+
 import SwiftUI
-import GeofenceSDK
 
 struct ContentView: View {
-	let greet = Greeting().greeting()
-
-	var body: some View {
-		Text(greet)
-	}
+  
+    var body: some View {
+        Text("Hello, world!")
+            .padding()
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
-	static var previews: some View {
-		ContentView()
-	}
+    static var previews: some View {
+        ContentView()
+    }
 }
