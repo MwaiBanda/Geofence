@@ -11,6 +11,7 @@ import MapKit
 
 struct ContentView: View {
     @State private var showTitles = false
+    @State private var showVisits = false
     @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 41.881832, longitude: -87.623177), span: MKCoordinateSpan(latitudeDelta: 11, longitudeDelta: 11))
     @StateObject private var locationController = LocationController()
     let geofencedLocations = [
@@ -21,6 +22,7 @@ struct ContentView: View {
     ]
    
     var body: some View {
+        ZStack {
         Map(
             coordinateRegion: $region,
             interactionModes: MapInteractionModes.all,
@@ -52,7 +54,26 @@ struct ContentView: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .ignoresSafeArea(.all)
         .onAppear {
-            locationController.monitorRegionAtLocation(center: geofencedLocations[2].coordinate, identifier: geofencedLocations[2].name)
+            locationController.monitorRegionAtLocation(locations: geofencedLocations)
+        }
+        .sheet(isPresented: $showVisits) {
+            Text("Visits")
+        }
+            VStack {
+                Spacer()
+                HStack {
+                    Spacer()
+                    Button { showVisits.toggle() } label: {
+                        Image(systemName: "chart.bar.doc.horizontal")
+                            .imageScale(.large)
+                            .foregroundColor(.black)
+                            .frame(width: 65, height: 65, alignment: .center)
+                            .background(Color.white)
+                            .cornerRadius(50)
+                            .padding()
+                    }
+                }
+            }
         }
     }
 }

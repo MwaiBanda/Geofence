@@ -63,17 +63,18 @@ class LocationController: NSObject, ObservableObject, CLLocationManagerDelegate 
             currentLocation = locations.first?.coordinate
               }
     }
-    func monitorRegionAtLocation(center: CLLocationCoordinate2D, identifier: String) {
-            
+    func monitorRegionAtLocation(locations: [Location]) {
+        locations.forEach { location in
         if CLLocationManager.isMonitoringAvailable(for: CLCircularRegion.self) {
                
-                let region = CLCircularRegion(center: center,
-                     radius: 200, identifier: identifier)
+            let region = CLCircularRegion(center: location.coordinate,
+                                          radius: 200, identifier: location.name)
                 region.notifyOnEntry = true
                 region.notifyOnExit = true
            
                 locationManager.startMonitoring(for: region)
             }
+        }
      }
     func locationManager(_ manager: CLLocationManager, didStartMonitoringFor region: CLRegion) {
         print("Delegate: didStartMonitoringFor" + region.identifier)

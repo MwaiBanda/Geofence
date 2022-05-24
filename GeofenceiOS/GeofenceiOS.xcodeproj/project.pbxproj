@@ -52,7 +52,7 @@
 		811BC1CC283CC0C400C90323 /* SheddAquarium.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SheddAquarium.gpx; sourceTree = "<group>"; };
 		811BC1CD283CC30500C90323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		811BC1CE283CC30500C90323 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		811BC1D0283CD13300C90323 /* Ohare.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Ohare.gpx; sourceTree = "<group>"; };
+		811BC1D0283CD13300C90323 /* O'Hare.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "O'Hare.gpx"; sourceTree = "<group>"; };
 		8187CCC8283C32CC00DCFF28 /* GeofenceiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeofenceiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8187CCCB283C32CC00DCFF28 /* GeofenceiOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeofenceiOSApp.swift; sourceTree = "<group>"; };
 		8187CCCD283C32CC00DCFF28 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -65,6 +65,8 @@
 		8187CCE8283C32CE00DCFF28 /* GeofenceiOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeofenceiOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8187CCF6283C344000DCFF28 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		81B3E2F3283C5880002ADB35 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		81B883BF283D296C000BF6EB /* Midway.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Midway.gpx; sourceTree = "<group>"; };
+		81B883C0283D2982000BF6EB /* Nandos.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Nandos.gpx; sourceTree = "<group>"; };
 		9BE4EB8D5E88CF8A0CDC51A3 /* Pods_GeofenceiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeofenceiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CC5F5145B6757C58095E39B /* Pods-GeofenceiOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeofenceiOSTests.debug.xcconfig"; path = "Target Support Files/Pods-GeofenceiOSTests/Pods-GeofenceiOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C3583220AF11DC1A3DD16E8B /* Pods-GeofenceiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeofenceiOS.release.xcconfig"; path = "Target Support Files/Pods-GeofenceiOS/Pods-GeofenceiOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -139,7 +141,9 @@
 			isa = PBXGroup;
 			children = (
 				811BC1CC283CC0C400C90323 /* SheddAquarium.gpx */,
-				811BC1D0283CD13300C90323 /* Ohare.gpx */,
+				811BC1D0283CD13300C90323 /* O'Hare.gpx */,
+				81B883BF283D296C000BF6EB /* Midway.gpx */,
+				81B883C0283D2982000BF6EB /* Nandos.gpx */,
 			);
 			path = GPX;
 			sourceTree = "<group>";
