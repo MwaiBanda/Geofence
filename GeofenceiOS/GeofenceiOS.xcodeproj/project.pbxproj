@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3B416FF6C43583B4C0DA91EE /* Pods_GeofenceiOS_GeofenceiOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3839F05CB8D2FAC54CE1B01 /* Pods_GeofenceiOS_GeofenceiOSUITests.framework */; };
+		811BC1CA283CB70100C90323 /* LocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811BC1C9283CB70100C90323 /* LocationController.swift */; };
+		811BC1CF283CC30500C90323 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 811BC1CE283CC30500C90323 /* MapKit.framework */; };
 		8187CCCC283C32CC00DCFF28 /* GeofenceiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8187CCCB283C32CC00DCFF28 /* GeofenceiOSApp.swift */; };
 		8187CCCE283C32CC00DCFF28 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8187CCCD283C32CC00DCFF28 /* ContentView.swift */; };
 		8187CCD0283C32CE00DCFF28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8187CCCF283C32CE00DCFF28 /* Assets.xcassets */; };
@@ -46,6 +48,11 @@
 		49C99A2853868CD1E855A13D /* Pods-GeofenceiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeofenceiOSTests.release.xcconfig"; path = "Target Support Files/Pods-GeofenceiOSTests/Pods-GeofenceiOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		5BB864E495F765FBEA2CC553 /* Pods-GeofenceiOS-GeofenceiOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeofenceiOS-GeofenceiOSUITests.release.xcconfig"; path = "Target Support Files/Pods-GeofenceiOS-GeofenceiOSUITests/Pods-GeofenceiOS-GeofenceiOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7B6B94AB2837B5D0442F1852 /* Pods-GeofenceiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeofenceiOS.debug.xcconfig"; path = "Target Support Files/Pods-GeofenceiOS/Pods-GeofenceiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		811BC1C9283CB70100C90323 /* LocationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationController.swift; sourceTree = "<group>"; };
+		811BC1CC283CC0C400C90323 /* SheddAquarium.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SheddAquarium.gpx; sourceTree = "<group>"; };
+		811BC1CD283CC30500C90323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		811BC1CE283CC30500C90323 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		811BC1D0283CD13300C90323 /* Ohare.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Ohare.gpx; sourceTree = "<group>"; };
 		8187CCC8283C32CC00DCFF28 /* GeofenceiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeofenceiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8187CCCB283C32CC00DCFF28 /* GeofenceiOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeofenceiOSApp.swift; sourceTree = "<group>"; };
 		8187CCCD283C32CC00DCFF28 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +78,7 @@
 			files = (
 				81B3E2EF283C4C02002ADB35 /* FirebaseCrashlytics in Frameworks */,
 				81B3E2ED283C4C02002ADB35 /* FirebaseAnalytics in Frameworks */,
+				811BC1CF283CC30500C90323 /* MapKit.framework in Frameworks */,
 				E6E24A2A65754033D23E4E91 /* Pods_GeofenceiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,6 +105,7 @@
 		54DB0D46114FCE3742F78BA4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				811BC1CE283CC30500C90323 /* MapKit.framework */,
 				9BE4EB8D5E88CF8A0CDC51A3 /* Pods_GeofenceiOS.framework */,
 				C3839F05CB8D2FAC54CE1B01 /* Pods_GeofenceiOS_GeofenceiOSUITests.framework */,
 				1220018268D6B8BAD7529838 /* Pods_GeofenceiOSTests.framework */,
@@ -115,6 +124,24 @@
 				49C99A2853868CD1E855A13D /* Pods-GeofenceiOSTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		811BC1C8283CB6E300C90323 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				811BC1CB283CC09A00C90323 /* GPX */,
+				811BC1C9283CB70100C90323 /* LocationController.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		811BC1CB283CC09A00C90323 /* GPX */ = {
+			isa = PBXGroup;
+			children = (
+				811BC1CC283CC0C400C90323 /* SheddAquarium.gpx */,
+				811BC1D0283CD13300C90323 /* Ohare.gpx */,
+			);
+			path = GPX;
 			sourceTree = "<group>";
 		};
 		8187CCBF283C32CC00DCFF28 = {
@@ -142,6 +169,8 @@
 		8187CCCA283C32CC00DCFF28 /* GeofenceiOS */ = {
 			isa = PBXGroup;
 			children = (
+				811BC1CD283CC30500C90323 /* Info.plist */,
+				811BC1C8283CB6E300C90323 /* Utils */,
 				81B3E2F1283C585D002ADB35 /* Main */,
 				8187CCF6283C344000DCFF28 /* GoogleService-Info.plist */,
 				8187CCCD283C32CC00DCFF28 /* ContentView.swift */,
@@ -425,6 +454,7 @@
 			files = (
 				8187CCCE283C32CC00DCFF28 /* ContentView.swift in Sources */,
 				81B3E2F4283C5880002ADB35 /* Location.swift in Sources */,
+				811BC1CA283CB70100C90323 /* LocationController.swift in Sources */,
 				8187CCCC283C32CC00DCFF28 /* GeofenceiOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -590,9 +620,13 @@
 				DEVELOPMENT_TEAM = 2HB3YHCHVH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GeofenceiOS/Info.plist;
+				INFOPLIST_KEY_NSLocationUsageDescription = "Allow to simulate";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow to simulate";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "gps location-services";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -620,9 +654,13 @@
 				DEVELOPMENT_TEAM = 2HB3YHCHVH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GeofenceiOS/Info.plist;
+				INFOPLIST_KEY_NSLocationUsageDescription = "Allow to simulate";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow to simulate";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "gps location-services";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
