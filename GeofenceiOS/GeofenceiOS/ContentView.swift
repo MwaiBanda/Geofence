@@ -57,7 +57,30 @@ struct ContentView: View {
             locationController.monitorRegionAtLocation(locations: geofencedLocations)
         }
         .sheet(isPresented: $showVisits) {
-            Text("Visits")
+            VStack {
+                HStack {
+                Text("Geofence History")
+                    .font(.title)
+                    .bold()
+                    .padding(.top)
+                    Spacer()
+                }
+                .padding(.leading)
+                .padding(.leading)
+                ForEach(geofencedLocations, id: \.id) { location in
+            PlainExpandableCard {
+                Text(location.name)
+            } coverIcon: { isExpanded in
+                Image(systemName: isExpanded.wrappedValue ? "chevron.up":"chevron.down")
+                    .foregroundColor(.gray)
+            } innerContent: {
+                Text("Visits")
+
+            }
+            }
+            Spacer()
+            }
+
         }
             VStack {
                 Spacer()

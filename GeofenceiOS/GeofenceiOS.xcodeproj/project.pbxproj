@@ -21,6 +21,9 @@
 		81B3E2ED283C4C02002ADB35 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 81B3E2EC283C4C02002ADB35 /* FirebaseAnalytics */; };
 		81B3E2EF283C4C02002ADB35 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 81B3E2EE283C4C02002ADB35 /* FirebaseCrashlytics */; };
 		81B3E2F4283C5880002ADB35 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B3E2F3283C5880002ADB35 /* Location.swift */; };
+		81B883C3283D3BAF000BF6EB /* BasePlainExpandableCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B883C2283D3BAF000BF6EB /* BasePlainExpandableCard.swift */; };
+		81B883C5283D3BB7000BF6EB /* PlainExpandableCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B883C4283D3BB7000BF6EB /* PlainExpandableCard.swift */; };
+		81B883C7283D3F3F000BF6EB /* Visit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B883C6283D3F3E000BF6EB /* Visit.swift */; };
 		CD91264130B2BB30C51FF9A3 /* Pods_GeofenceiOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1220018268D6B8BAD7529838 /* Pods_GeofenceiOSTests.framework */; };
 		E6E24A2A65754033D23E4E91 /* Pods_GeofenceiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BE4EB8D5E88CF8A0CDC51A3 /* Pods_GeofenceiOS.framework */; };
 /* End PBXBuildFile section */
@@ -67,6 +70,9 @@
 		81B3E2F3283C5880002ADB35 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		81B883BF283D296C000BF6EB /* Midway.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Midway.gpx; sourceTree = "<group>"; };
 		81B883C0283D2982000BF6EB /* Nandos.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Nandos.gpx; sourceTree = "<group>"; };
+		81B883C2283D3BAF000BF6EB /* BasePlainExpandableCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePlainExpandableCard.swift; sourceTree = "<group>"; };
+		81B883C4283D3BB7000BF6EB /* PlainExpandableCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlainExpandableCard.swift; sourceTree = "<group>"; };
+		81B883C6283D3F3E000BF6EB /* Visit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visit.swift; sourceTree = "<group>"; };
 		9BE4EB8D5E88CF8A0CDC51A3 /* Pods_GeofenceiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeofenceiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CC5F5145B6757C58095E39B /* Pods-GeofenceiOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeofenceiOSTests.debug.xcconfig"; path = "Target Support Files/Pods-GeofenceiOSTests/Pods-GeofenceiOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C3583220AF11DC1A3DD16E8B /* Pods-GeofenceiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeofenceiOS.release.xcconfig"; path = "Target Support Files/Pods-GeofenceiOS/Pods-GeofenceiOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -212,6 +218,7 @@
 		81B3E2F1283C585D002ADB35 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				81B883C1283D3B37000BF6EB /* Components */,
 				81B3E2F2283C586B002ADB35 /* Models */,
 				8187CCCB283C32CC00DCFF28 /* GeofenceiOSApp.swift */,
 			);
@@ -222,8 +229,18 @@
 			isa = PBXGroup;
 			children = (
 				81B3E2F3283C5880002ADB35 /* Location.swift */,
+				81B883C6283D3F3E000BF6EB /* Visit.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		81B883C1283D3B37000BF6EB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				81B883C4283D3BB7000BF6EB /* PlainExpandableCard.swift */,
+				81B883C2283D3BAF000BF6EB /* BasePlainExpandableCard.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -456,10 +473,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81B883C5283D3BB7000BF6EB /* PlainExpandableCard.swift in Sources */,
 				8187CCCE283C32CC00DCFF28 /* ContentView.swift in Sources */,
+				81B883C3283D3BAF000BF6EB /* BasePlainExpandableCard.swift in Sources */,
 				81B3E2F4283C5880002ADB35 /* Location.swift in Sources */,
 				811BC1CA283CB70100C90323 /* LocationController.swift in Sources */,
 				8187CCCC283C32CC00DCFF28 /* GeofenceiOSApp.swift in Sources */,
+				81B883C7283D3F3F000BF6EB /* Visit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
