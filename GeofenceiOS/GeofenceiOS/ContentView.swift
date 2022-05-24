@@ -14,74 +14,93 @@ struct ContentView: View {
     @State private var showVisits = false
     @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 41.881832, longitude: -87.623177), span: MKCoordinateSpan(latitudeDelta: 11, longitudeDelta: 11))
     @StateObject private var locationController = LocationController()
-    let geofencedLocations = [
-        Location(name: "Chicago Midway International Airport", latitude: 41.78499686, longitude: -87.751496994),
-        Location(name: "O’Hare International Airport", latitude: 41.978611, longitude: -87.904724),
-        Location(name: "Shedd Aquarium", latitude: 41.8670292454, longitude: -87.6134396189),
-        Location(name: "Nando's Peri Peri Chicken", latitude: 41.90855, longitude: -87.64636)
-    ]
-   
+  
     var body: some View {
         ZStack {
-        Map(
-            coordinateRegion: $region,
-            interactionModes: MapInteractionModes.all,
-            showsUserLocation: true,
-            annotationItems: geofencedLocations
-        ) { coo in
-            MapAnnotation(coordinate: coo.coordinate) {
-                VStack {
-                    ZStack {
-                        Circle()
-                            .foregroundColor(.red.opacity(0.4))
-                            .frame(width: 100, height: 100)
-                            .zIndex(0)
-                        
-                        Image(systemName: "mappin").imageScale(.large)
-                            .zIndex(2)
-                        
-                    }.onTapGesture {
-                        showTitles.toggle()
-                    }
-                    if showTitles {
-                        Text(coo.name)
-                            .font(.subheadline)
-                            .fontWeight(.bold)
+            Map(
+                coordinateRegion: $region,
+                interactionModes: MapInteractionModes.all,
+                showsUserLocation: true,
+                annotationItems: locationController.geofencedLocations
+            ) { coo in
+                MapAnnotation(coordinate: coo.coordinate) {
+                    VStack {
+                        ZStack {
+                            Circle()
+                                .foregroundColor(.red.opacity(0.4))
+                                .frame(width: 100, height: 100)
+                                .zIndex(0)
+                            
+                            Image(systemName: "mappin").imageScale(.large)
+                                .zIndex(2)
+                            
+                        }.onTapGesture {
+                            showTitles.toggle()
+                        }
+                        if showTitles {
+                            Text(coo.name)
+                                .font(.subheadline)
+                                .fontWeight(.bold)
+                        }
                     }
                 }
             }
-        }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .ignoresSafeArea(.all)
-        .onAppear {
-            locationController.monitorRegionAtLocation(locations: geofencedLocations)
-        }
-        .sheet(isPresented: $showVisits) {
-            VStack {
-                HStack {
-                Text("Geofence History")
-                    .font(.title)
-                    .bold()
-                    .padding(.top)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .ignoresSafeArea(.all)
+            .onAppear {
+                locationController.monitorGeofencedLocations()
+            }
+            .sheet(isPresented: $showVisits) {
+                VStack {
+                    HStack {
+                        Text("Geofence History")
+                            .font(.title)
+                            .bold()
+                            .padding(.top)
+                        Spacer()
+                    }
+                    .padding(.leading)
+                    .padding(.leading)
+                    ForEach(locationController.geofencedLocations, id: \.id) { location in
+                        PlainExpandableCard {
+                            Text(location.name)
+                        } coverIcon: { isExpanded in
+                            Image(systemName: isExpanded.wrappedValue ? "chevron.up":"chevron.down")
+                                .foregroundColor(.gray)
+                        } innerContent: {
+                            VStack {
+                            ForEach(locationController.history.filter({ $0.name == location.name }), id: \.id) { visit in
+                                HStack {
+                                Text("• ") +
+                                Text("Visited ").bold() +
+                                Text(" \(visit.name) at ") +
+                                Text ("\(visit.visitationStart)").bold() +
+                                Text(visit.visitationEnd.isEmpty ? "" : " and ") +
+                                Text(visit.visitationEnd.isEmpty ? "" : "left ").bold() +
+                                Text(visit.visitationEnd.isEmpty ? "" : "\(visit.visitationEnd)").bold()
+                                Spacer()
+                                }
+                                .padding(.horizontal)
+                                .padding(.horizontal)
+                                .padding(.top)
+
+                                Divider()
+                                    .padding(.top)
+
+                            }
+                                
+                                Spacer()
+
+                            }
+                            .multilineTextAlignment(.leading)
+                            .padding(.vertical)
+                            
+                        }
+                    }
                     Spacer()
                 }
-                .padding(.leading)
-                .padding(.leading)
-                ForEach(geofencedLocations, id: \.id) { location in
-            PlainExpandableCard {
-                Text(location.name)
-            } coverIcon: { isExpanded in
-                Image(systemName: isExpanded.wrappedValue ? "chevron.up":"chevron.down")
-                    .foregroundColor(.gray)
-            } innerContent: {
-                Text("Visits")
-
+                
             }
-            }
-            Spacer()
-            }
-
-        }
             VStack {
                 Spacer()
                 HStack {

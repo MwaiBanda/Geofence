@@ -10,6 +10,6 @@ import Foundation
 struct Visit: Identifiable {
     let id = UUID()
     let name: String
-    let visitationStart: Date
-    let visitationEnd: Date
+    let visitationStart: String
+    var visitationEnd: String = ""
 }
