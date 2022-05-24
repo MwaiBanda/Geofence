@@ -3,6 +3,7 @@ plugins {
     kotlin("android")
     id("com.google.gms.google-services")
     id("com.google.firebase.crashlytics")
+    id("com.google.android.libraries.mapsplatform.secrets-gradle-plugin")
 }
 
 android {
@@ -19,13 +20,20 @@ android {
             isMinifyEnabled = false
         }
     }
+    namespace = "com.mwaibanda.geofence_multiplatform.android"
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
     implementation(project(":GeofenceSDK"))
-    implementation("com.google.android.material:material:1.4.0")
-    implementation("androidx.appcompat:appcompat:1.3.1")
-    implementation("androidx.constraintlayout:constraintlayout:2.1.0")
-    implementation("com.google.firebase:firebase-crashlytics:18.2.6")
-    implementation("com.google.firebase:firebase-analytics:20.0.2")
+    implementation("com.google.android.material:material:1.6.0")
+    implementation("androidx.appcompat:appcompat:1.4.1")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("com.google.firebase:firebase-crashlytics:18.2.10")
+    implementation("com.google.firebase:firebase-analytics:21.0.0")
+    implementation("com.google.android.gms:play-services-location:19.0.1")
+    implementation ("com.google.android.gms:play-services-location:19.0.1")
+    implementation ("com.google.android.gms:play-services-maps:18.0.2")
 }
