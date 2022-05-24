@@ -1,0 +1,16 @@
+PODS:
+  - GeofenceSDK (1.0)
+
+DEPENDENCIES:
+  - GeofenceSDK (from `../GeofenceSDK`)
+
+EXTERNAL SOURCES:
+  GeofenceSDK:
+    :path: "../GeofenceSDK"
+
+SPEC CHECKSUMS:
+  GeofenceSDK: 2f4d5974aa806bf3dbf61c959936d7806511ffcc
+
+PODFILE CHECKSUM: 50bd4d659b4f1d70fe1f6b494ba3029a34ffdbc8
+
+COCOAPODS: 1.11.2
