@@ -2,7 +2,7 @@
 <table>
   <tr>
     <td>MapView</td>
-     <td>HistoryView</td>
+     <td colspan="2">HistoryView</td>
   </tr>
   <tr>
     <td><img src="https://user-images.githubusercontent.com/49708426/170116106-8dfa3810-b457-411c-b422-b75d5a514a79.png" width=320 height=450></td>
