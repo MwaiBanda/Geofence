@@ -18,6 +18,7 @@
 		8187CCF7283C344100DCFF28 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8187CCF6283C344000DCFF28 /* GoogleService-Info.plist */; };
 		81B3E2ED283C4C02002ADB35 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 81B3E2EC283C4C02002ADB35 /* FirebaseAnalytics */; };
 		81B3E2EF283C4C02002ADB35 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 81B3E2EE283C4C02002ADB35 /* FirebaseCrashlytics */; };
+		81B3E2F4283C5880002ADB35 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B3E2F3283C5880002ADB35 /* Location.swift */; };
 		CD91264130B2BB30C51FF9A3 /* Pods_GeofenceiOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1220018268D6B8BAD7529838 /* Pods_GeofenceiOSTests.framework */; };
 		E6E24A2A65754033D23E4E91 /* Pods_GeofenceiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BE4EB8D5E88CF8A0CDC51A3 /* Pods_GeofenceiOS.framework */; };
 /* End PBXBuildFile section */
@@ -56,6 +57,7 @@
 		8187CCE6283C32CE00DCFF28 /* GeofenceiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeofenceiOSUITests.swift; sourceTree = "<group>"; };
 		8187CCE8283C32CE00DCFF28 /* GeofenceiOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeofenceiOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8187CCF6283C344000DCFF28 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		81B3E2F3283C5880002ADB35 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		9BE4EB8D5E88CF8A0CDC51A3 /* Pods_GeofenceiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeofenceiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CC5F5145B6757C58095E39B /* Pods-GeofenceiOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeofenceiOSTests.debug.xcconfig"; path = "Target Support Files/Pods-GeofenceiOSTests/Pods-GeofenceiOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C3583220AF11DC1A3DD16E8B /* Pods-GeofenceiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeofenceiOS.release.xcconfig"; path = "Target Support Files/Pods-GeofenceiOS/Pods-GeofenceiOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -140,8 +142,8 @@
 		8187CCCA283C32CC00DCFF28 /* GeofenceiOS */ = {
 			isa = PBXGroup;
 			children = (
+				81B3E2F1283C585D002ADB35 /* Main */,
 				8187CCF6283C344000DCFF28 /* GoogleService-Info.plist */,
-				8187CCCB283C32CC00DCFF28 /* GeofenceiOSApp.swift */,
 				8187CCCD283C32CC00DCFF28 /* ContentView.swift */,
 				8187CCCF283C32CE00DCFF28 /* Assets.xcassets */,
 				8187CCD1283C32CE00DCFF28 /* Preview Content */,
@@ -172,6 +174,23 @@
 				8187CCE8283C32CE00DCFF28 /* GeofenceiOSUITestsLaunchTests.swift */,
 			);
 			path = GeofenceiOSUITests;
+			sourceTree = "<group>";
+		};
+		81B3E2F1283C585D002ADB35 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				81B3E2F2283C586B002ADB35 /* Models */,
+				8187CCCB283C32CC00DCFF28 /* GeofenceiOSApp.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		81B3E2F2283C586B002ADB35 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				81B3E2F3283C5880002ADB35 /* Location.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -405,6 +424,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8187CCCE283C32CC00DCFF28 /* ContentView.swift in Sources */,
+				81B3E2F4283C5880002ADB35 /* Location.swift in Sources */,
 				8187CCCC283C32CC00DCFF28 /* GeofenceiOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

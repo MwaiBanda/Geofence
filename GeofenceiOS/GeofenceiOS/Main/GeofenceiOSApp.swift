@@ -19,6 +19,7 @@ struct GeofenceiOSApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+            
         }
     }
 }
