@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3B416FF6C43583B4C0DA91EE /* Pods_GeofenceiOS_GeofenceiOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3839F05CB8D2FAC54CE1B01 /* Pods_GeofenceiOS_GeofenceiOSUITests.framework */; };
+		8100502A283D554100846D6F /* GeofenceHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81005029283D554100846D6F /* GeofenceHistoryView.swift */; };
 		811BC1CA283CB70100C90323 /* LocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811BC1C9283CB70100C90323 /* LocationController.swift */; };
 		811BC1CF283CC30500C90323 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 811BC1CE283CC30500C90323 /* MapKit.framework */; };
 		8187CCCC283C32CC00DCFF28 /* GeofenceiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8187CCCB283C32CC00DCFF28 /* GeofenceiOSApp.swift */; };
@@ -51,6 +52,7 @@
 		49C99A2853868CD1E855A13D /* Pods-GeofenceiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeofenceiOSTests.release.xcconfig"; path = "Target Support Files/Pods-GeofenceiOSTests/Pods-GeofenceiOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		5BB864E495F765FBEA2CC553 /* Pods-GeofenceiOS-GeofenceiOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeofenceiOS-GeofenceiOSUITests.release.xcconfig"; path = "Target Support Files/Pods-GeofenceiOS-GeofenceiOSUITests/Pods-GeofenceiOS-GeofenceiOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7B6B94AB2837B5D0442F1852 /* Pods-GeofenceiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeofenceiOS.debug.xcconfig"; path = "Target Support Files/Pods-GeofenceiOS/Pods-GeofenceiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		81005029283D554100846D6F /* GeofenceHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeofenceHistoryView.swift; sourceTree = "<group>"; };
 		811BC1C9283CB70100C90323 /* LocationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationController.swift; sourceTree = "<group>"; };
 		811BC1CC283CC0C400C90323 /* SheddAquarium.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SheddAquarium.gpx; sourceTree = "<group>"; };
 		811BC1CD283CC30500C90323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -134,6 +136,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		81005028283D54C300846D6F /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				81B883C1283D3B37000BF6EB /* Components */,
+				81005029283D554100846D6F /* GeofenceHistoryView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
 		811BC1C8283CB6E300C90323 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,7 +194,6 @@
 				811BC1C8283CB6E300C90323 /* Utils */,
 				81B3E2F1283C585D002ADB35 /* Main */,
 				8187CCF6283C344000DCFF28 /* GoogleService-Info.plist */,
-				8187CCCD283C32CC00DCFF28 /* ContentView.swift */,
 				8187CCCF283C32CE00DCFF28 /* Assets.xcassets */,
 				8187CCD1283C32CE00DCFF28 /* Preview Content */,
 			);
@@ -218,9 +228,10 @@
 		81B3E2F1283C585D002ADB35 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				81B883C1283D3B37000BF6EB /* Components */,
+				81005028283D54C300846D6F /* Presentation */,
 				81B3E2F2283C586B002ADB35 /* Models */,
 				8187CCCB283C32CC00DCFF28 /* GeofenceiOSApp.swift */,
+				8187CCCD283C32CC00DCFF28 /* ContentView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -478,6 +489,7 @@
 				81B883C3283D3BAF000BF6EB /* BasePlainExpandableCard.swift in Sources */,
 				81B3E2F4283C5880002ADB35 /* Location.swift in Sources */,
 				811BC1CA283CB70100C90323 /* LocationController.swift in Sources */,
+				8100502A283D554100846D6F /* GeofenceHistoryView.swift in Sources */,
 				8187CCCC283C32CC00DCFF28 /* GeofenceiOSApp.swift in Sources */,
 				81B883C7283D3F3F000BF6EB /* Visit.swift in Sources */,
 			);
