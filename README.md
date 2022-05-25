@@ -16,7 +16,7 @@ Download code -> Geofence-master ->  select simulator(pixel 3a tested✅) ->  ru
 
   </tr>
     <tr>
-    <td>MapView</td>
+    <td>MapsActivity</td>
      <td colspan="2"></td>
   </tr>
   <tr>
