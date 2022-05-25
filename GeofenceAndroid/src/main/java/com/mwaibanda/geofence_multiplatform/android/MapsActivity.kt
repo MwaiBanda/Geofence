@@ -49,7 +49,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         mMap = googleMap
 
         val chicago = LatLng(41.881832, -87.623177)
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(chicago, 12f))
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(chicago, 11f))
 
         GeofencingConstants.GEOFENCED_LOCATIONS.forEach {  location ->
             mMap.addMarker(MarkerOptions().position(location.latLong).title(getString(location.name)))

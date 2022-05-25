@@ -44,33 +44,29 @@ fun errorMessage(context: Context, errorCode: Int): String {
 /**
  * Stores latitude and longitude information along with a hint to help user find the location.
  */
-data class LandmarkDataObject(val id: String, val name: Int, val latLong: LatLng)
+data class Location(val id: String, val name: Int, val latLong: LatLng)
 
 internal object GeofencingConstants {
 
-    /**
-     * Used to set an expiration time for a geofence. After this amount of time, Location services
-     * stops tracking the geofence. For this sample, geofences expire after one hour.
-     */
     val GEOFENCE_EXPIRATION_IN_MILLISECONDS: Long = TimeUnit.HOURS.toMillis(1)
 
     val GEOFENCED_LOCATIONS = arrayOf(
-        LandmarkDataObject(
+        Location(
             "midway_apt",
             R.string.midway_location,
             LatLng(41.78499686, -87.751496994)),
 
-        LandmarkDataObject(
+        Location(
             "ohare_apt",
             R.string.ohare_location,
             LatLng(41.978611, -87.904724)),
 
-        LandmarkDataObject(
+        Location(
             "shedd_aq",
             R.string.shedd_location,
             LatLng(41.8670292454, -87.6134396189)),
 
-        LandmarkDataObject(
+        Location(
            "nandos_rst",
             R.string.nandos_location,
             LatLng(41.90855, -87.64636))
