@@ -17,3 +17,7 @@ struct Location: Identifiable {
         CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
     }
 }
+
+extension Location: Equatable {
+    
+}
