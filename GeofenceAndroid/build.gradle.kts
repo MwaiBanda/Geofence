@@ -34,6 +34,5 @@ dependencies {
     implementation("com.google.firebase:firebase-crashlytics:18.2.10")
     implementation("com.google.firebase:firebase-analytics:21.0.0")
     implementation("com.google.android.gms:play-services-location:19.0.1")
-    implementation ("com.google.android.gms:play-services-location:19.0.1")
     implementation ("com.google.android.gms:play-services-maps:18.0.2")
 }
