@@ -15,4 +15,13 @@ Download code -> Geofence-master ->  select simulator(pixel 3a tested✅) ->  ru
        <td><img src="https://user-images.githubusercontent.com/49708426/170116787-f3bb43d1-840d-42fd-adea-61fba7e35cf2.png" width=320 height=450></td>
 
   </tr>
+    <tr>
+    <td>MapView</td>
+     <td colspan="2"></td>
+  </tr>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/49708426/170178983-f4c3767c-e9da-4500-977f-a65a8dc60e71.png" width=320 height=450></td>
+    <td colspan="2"></td>
+
+  </tr>
   </table>
