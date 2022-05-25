@@ -1,15 +1,8 @@
 package com.mwaibanda.geofence_multiplatform.android
 
-import android.app.PendingIntent
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.gms.common.api.GoogleApiClient
-import com.google.android.gms.location.GeofencingRequest
-import com.google.android.gms.maps.GoogleMap
-import com.google.android.gms.maps.model.LatLng
-import com.google.android.gms.maps.model.Marker
-import com.google.android.gms.maps.model.MarkerOptions
 import com.google.firebase.analytics.FirebaseAnalytics
 
 
