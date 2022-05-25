@@ -1,7 +1,7 @@
 # Geofence
 Geofencing on Android & iOS w/ Google Maps & CoreLocation (SwiftUI & XML w/ Kotlin)
 # How to run(`iOS`) 
-Download code -> GeofenceiOS -> open XCWorkspace -> select simulator(iphone 12 pro max tested✅) -> run<br>
+Download code -> Geofence-master -> GeofenceiOS -> open XCWorkspace -> select simulator(iphone 12 pro max tested✅) -> run<br>
 # How to run(`Android`) 
 Download code -> Geofence-master ->  select simulator(pixel 3a tested✅) ->  run<br>
 <table>
